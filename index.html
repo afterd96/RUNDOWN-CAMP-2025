@@ -1,83 +1,92 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rundown Camp 2025</title>
+  <title>Rundown Happy Camp 2025</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      margin: 0;
-      padding: 20px;
+      font-family: FatFrank, sans-serif;
+      background: #f5f7fa;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    p {
       text-align: center;
     }
 
-    h1 {
-      color: #2c3e50;
+    /* Container timeline */
+    .timeline {
+      position: relative;
+      margin: 40px 0;
+      padding-left: 40px;
+      border-left: 3px solid #29ab1d; /* garis hijau */
     }
 
-    .container {
-      max-width: 600px;
-      margin: auto;
+    /* Tiap kegiatan */
+    .event {
+      position: relative;
+      margin-bottom: 30px;
+      padding: 15px 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     }
 
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 15px 0;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: left;
+    /* Bulatan di garis */
+    .event::before {
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: 20px;
+      width: 15px;
+      height: 15px;
+      background: #3498db;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px #3498db;
     }
 
     .time {
-      font-size: 18px;
       font-weight: bold;
-      color: #16a085;
-      margin-bottom: 5px;
+      color: #1a5276;
     }
-
     .activity {
-      font-size: 20px;
-      color: #2c3e50;
+      margin: 5px 0;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>📅 Rundown Camping Ceria 2025</h1>
-  <div class="container">
 
-    <div class="card">
-      <div class="time">07.00 - 08.00</div>
-      <div class="activity">⛺ Registrasi & Pembukaan</div>
+  <h1>⛺ RUNDOWN CAMPING CERIA 2025</h1>
+  <p><b>19–20 September 2025</b><br>
+  <i>"Berani Berkemah, Menjadi Cekatan, Mandiri, dan Ceria"</i></p>
+
+  <div class="timeline">
+    <div class="event">
+      <div class="time">07.00 – 07.30</div>
+      <div class="activity">Briefing Guru</div>
+      <div class="note">Ketua</div>
     </div>
 
-    <div class="card">
-      <div class="time">08.00 - 10.00</div>
-      <div class="activity">🌲 Ice Breaking & Games Outdoor</div>
+    <div class="event">
+      <div class="time">07.30 – 08.00</div>
+      <div class="activity">Persiapan Upacara Pembukaan</div>
+      <div class="note">Kedatangan siswa 07.30, baju olahraga, sarapan, shalat dhuha</div>
     </div>
 
-    <div class="card">
-      <div class="time">10.00 - 12.00</div>
-      <div class="activity">🔥 Outbond & Jelajah Alam</div>
+    <div class="event">
+      <div class="time">08.00 – 08.30</div>
+      <div class="activity">Apel Pembukaan</div>
+      <div class="note">Pemimpin: Shaka (5B), MC: Iryanti (6B), Doa: Yazdaniar (4A), Sambutan: Bu Rifah</div>
     </div>
-
-    <div class="card">
-      <div class="time">12.00 - 13.00</div>
-      <div class="activity">🍴 Ishoma (Istirahat, Sholat, Makan)</div>
-    </div>
-
-    <div class="card">
-      <div class="time">13.00 - 15.00</div>
-      <div class="activity">🎨 Kreativitas Kelompok</div>
-    </div>
-
-    <div class="card">
-      <div class="time">19.00 - 21.00</div>
-      <div class="activity">🔥 Api Unggun & Pentas Seni</div>
-    </div>
-
   </div>
+
 </body>
 </html>
