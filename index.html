@@ -3,61 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Rundown Happy Camp 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: FatFrank, sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
       background: #f5f7fa;
       margin: 20px;
     }
     h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800; /* extra bold */
+      font-size: 2.5em;
       text-align: center;
       color: #2c3e50;
     }
     p {
       text-align: center;
+      font-weight: 300; /* light */
     }
-
-    /* Container timeline */
     .timeline {
       position: relative;
-      margin: 40px 0;
+      margin: 30px 0;
       padding-left: 40px;
-      border-left: 3px solid #29ab1d; /* garis hijau */
+      border-left: 3px solid #3498db;
     }
-
-    /* Tiap kegiatan */
     .event {
       position: relative;
-      margin-bottom: 30px;
-      padding: 15px 20px;
-      background: #fff;
-      border-radius: 8px;
+      background: white;
+      border: 1px solid #3498db;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
       box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     }
-
-    /* Bulatan di garis */
     .event::before {
       content: "";
       position: absolute;
-      left: -12px;
+      left: -11px;
       top: 20px;
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       background: #3498db;
+      border: 3px solid white;
       border-radius: 50%;
-      border: 2px solid #fff;
       box-shadow: 0 0 0 2px #3498db;
     }
-
-    .time {
-      font-weight: bold;
+    .event-time {
+      font-weight: 600; /* semi-bold */
       color: #1a5276;
+      margin-bottom: 5px;
     }
-    .activity {
+    .event-activity {
+      font-weight: 400; /* regular */
       margin: 5px 0;
     }
-    .note {
-      font-size: 0.9em;
+    .event-note {
+      font-weight: 300; /* light */
+      font-style: italic;
       color: #555;
     }
   </style>
@@ -70,21 +73,21 @@
 
   <div class="timeline">
     <div class="event">
-      <div class="time">07.00 – 07.30</div>
-      <div class="activity">Briefing Guru</div>
-      <div class="note">Ketua</div>
+      <div class="event-time">07.00 – 07.30</div>
+      <div class="event-activity">Briefing Guru</div>
+      <div class="event-note">Ketua</div>
     </div>
 
     <div class="event">
-      <div class="time">07.30 – 08.00</div>
-      <div class="activity">Persiapan Upacara Pembukaan</div>
-      <div class="note">Kedatangan siswa 07.30, baju olahraga, sarapan, shalat dhuha</div>
+      <div class="event-time">07.30 – 08.00</div>
+      <div class="event-activity">Persiapan Upacara Pembukaan</div>
+      <div class="event-note">Kedatangan siswa 07.30, baju olahraga, sarapan, shalat dhuha</div>
     </div>
 
     <div class="event">
-      <div class="time">08.00 – 08.30</div>
-      <div class="activity">Apel Pembukaan</div>
-      <div class="note">Pemimpin: Shaka (5B), MC: Iryanti (6B), Doa: Yazdaniar (4A), Sambutan: Bu Rifah</div>
+      <div class="event-time">08.00 – 08.30</div>
+      <div class="event-activity">Apel Pembukaan</div>
+      <div class="event-note">Pemimpin: Shaka (5B), MC: Iryanti (6B), Doa: Yazdaniar (4A), Sambutan: Bu Rifah</div>
     </div>
   </div>
 
